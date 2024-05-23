@@ -104,7 +104,7 @@ class VideoUtils(object):
 
             # if the first frame is None, initialize it
             if firstFrame is None:
-                print "Waiting for video to adjust..."
+                print (Waiting for video to adjust...)
                 if tempFrame is None:
                     tempFrame = gray
                     continue
