@@ -103,8 +103,8 @@ class VideoUtils(object):
             gray = cv2.GaussianBlur(gray, (21, 21), 0)
 
             # if the first frame is None, initialize it
-            if firstFrame is None:
-                print (Waiting for video to adjust...)
+            if first frame is None:
+                print ("Waiting for video to adjust...")
                 if tempFrame is None:
                     tempFrame = gray
                     continue
