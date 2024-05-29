@@ -12,7 +12,6 @@ import contextlib
 
 import imutils
 import RPi.GPIO as GPIO
-from Adafruit_MotorHAT import Adafruit_MotorHAT, Adafruit_DCMotor, Adafruit_StepperMotor
 
 
 ### User Parameters ###
