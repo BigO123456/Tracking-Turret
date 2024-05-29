@@ -4,7 +4,6 @@ except Exception as e:
     print("Warning: OpenCV not installed. To use motion detection, make sure you've properly configured OpenCV.")
 
 import time
-import thread
 import threading
 import atexit
 import sys
