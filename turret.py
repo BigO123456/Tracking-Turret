@@ -53,11 +53,7 @@ class VideoUtils(object):
    
     @staticmethod
     def live_video(camera_port=0):
-        """
-    
-    :param camera:
-    :return:
-        """
+        
 
         video_capture = cv2.VideoCapture(camera_port)
 
