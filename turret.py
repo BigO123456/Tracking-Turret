@@ -183,7 +183,7 @@ class Turret(object):
 
     def calibrate(self):
         """
-        Waits for input to calibrate the turrets axis
+        # Waits for input to calibrate the turrets axis
         :return:
         """
         print ("Please calibrate the tilt of the gun so that it is level. Commands: (w) moves up, " \
@@ -198,7 +198,7 @@ class Turret(object):
 
     def __calibrate_x_axis(self):
         """
-        Waits for input to calibrate the x axis
+        # Waits for input to calibrate the x axis
         :return:
         """
         with raw_mode(sys.stdin):
@@ -227,7 +227,7 @@ class Turret(object):
 
     def __calibrate_y_axis(self):
         """
-        Waits for input to calibrate the y axis.
+        # Waits for input to calibrate the y axis.
         :return:
         """
         with raw_mode(sys.stdin):
@@ -256,7 +256,7 @@ class Turret(object):
 
     def motion_detection(self, show_video=False):
         """
-        Uses the camera to move the turret. OpenCV ust be configured to use this.
+        # Uses the camera to move the turret. OpenCV ust be configured to use this.
         :return:
         """
         VideoUtils.find_motion(self.__move_axis, show_video=show_video)
@@ -319,7 +319,7 @@ class Turret(object):
 
     def interactive(self):
         """
-        Starts an interactive session. Key presses determine movement.
+        # Starts an interactive session. Key presses determine movement.
         :return:
         """
 
@@ -369,7 +369,7 @@ class Turret(object):
     @staticmethod
     def move_forward(motor, steps):
         """
-        Moves the stepper motor forward the specified number of steps.
+        # Moves the stepper motor forward the specified number of steps.
         :param motor:
         :param steps:
         :return:
@@ -379,7 +379,7 @@ class Turret(object):
     @staticmethod
     def move_backward(motor, steps):
         """
-        Moves the stepper motor backward the specified number of steps
+        # Moves the stepper motor backward the specified number of steps
         :param motor:
         :param steps:
         :return:
