@@ -165,7 +165,7 @@ class VideoUtils(object):
 
 class Turret(object):
     """
-    Class used for turret control.
+    # Class used for turret control.
     """
     def __init__(self, friendly_mode=True):
         self.friendly_mode = friendly_mode
