@@ -396,7 +396,7 @@ class Turret(object):
         """
         Recommended for auto-disabling motors on shutdown!
         :return:
-        """
+        
        
 
 if __name__ == "__main__":
