@@ -54,7 +54,7 @@ class VideoUtils(object):
     @staticmethod
     def live_video(camera_port=0):
         """
-    Opens a window with live video.
+    
         :param camera:
         :return:
         """
