@@ -11,6 +11,7 @@ kit = MotorKit()
 for i in range(100):
     kit.stepper1.onestep()
 import threading
+import thread
 import atexit
 import sys
 import termios
