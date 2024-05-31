@@ -4,6 +4,12 @@ except Exception as e:
     print("Warning: OpenCV not installed. To use motion detection, make sure you've properly configured OpenCV.")
 
 import time
+from adafruit_motorkit import MotorKit
+
+kit = MotorKit()
+
+for i in range(100):
+    kit.stepper1.onestep()
 import threading
 import atexit
 import sys
@@ -12,7 +18,6 @@ import contextlib
 
 import imutils
 import RPi.GPIO as GPIO
-
 
 ### User Parameters ###
 
