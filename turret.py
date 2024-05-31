@@ -38,7 +38,7 @@ def raw_mode(file):
     Magic function that allows key presses.
     :param file:
     :return:
-    """import thread
+
     old_attrs = termios.tcgetattr(file.fileno())
     new_attrs = old_attrs[:]
     new_attrs[3] = new_attrs[3] & ~(termios.ECHO | termios.ICANON)
