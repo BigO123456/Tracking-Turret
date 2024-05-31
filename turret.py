@@ -51,7 +51,7 @@ def raw_mode(file):
 
 class VideoUtils(object):
     """
-    Helper function for video utilities.
+    Helper for video utilities.
     """
     @staticmethod
     def live_video(camera_port=0):
