@@ -177,7 +177,7 @@ class Turret(object):
         self.friendly_mode = friendly_mode
 
         # create a default object, no changes to I2C address or frequency
-        self.mh = Adafruit_MotorHAT()
+        self.mh = Motorkit()
         atexit.register(self.__turn_off_motors)
 
         # Stepper motor 1
