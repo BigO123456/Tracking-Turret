@@ -397,10 +397,7 @@ class Turret(object):
         Recommended for auto-disabling motors on shutdown!
         :return:
         """
-        self.mh.getMotor(1).run(Adafruit_MotorHAT.RELEASE)
-        self.mh.getMotor(2).run(Adafruit_MotorHAT.RELEASE)
-        self.mh.getMotor(3).run(Adafruit_MotorHAT.RELEASE)
-        self.mh.getMotor(4).run(Adafruit_MotorHAT.RELEASE)
+       
 
 if __name__ == "__main__":
     t = Turret(friendly_mode=False)
