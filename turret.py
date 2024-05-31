@@ -11,7 +11,6 @@ kit = MotorKit()
 for i in range(100):
     kit.stepper1.onestep()
 import threading
-import thread
 import atexit
 import sys
 import termios
@@ -39,7 +38,7 @@ def raw_mode(file):
     Magic function that allows key presses.
     :param file:
     :return:
-    """
+    """import thread
     old_attrs = termios.tcgetattr(file.fileno())
     new_attrs = old_attrs[:]
     new_attrs[3] = new_attrs[3] & ~(termios.ECHO | termios.ICANON)
@@ -403,16 +402,16 @@ class Turret(object):
 if __name__ == "__main__":
     t = Turret(friendly_mode=False)
 
-    user_input = raw_input("Choose an input mode: (1) Motion Detection, (2) Interactive\n")
+    user_input = Input("Choose an input mode: (1) Motion Detection, (2) Interactive\n")
 
     if user_input == "1":
         t.calibrate()
-        if raw_input("Live video? (y, n)\n").lower() == "y":
+        if Input("Live video? (y, n)\n").lower() == "y":
             t.motion_detection(show_video=True)
         else:
             t.motion_detection()
     elif user_input == "2":
-        if raw_input("Live video? (y, n)\n").lower() == "y":
+        if Input("Live video? (y, n)\n").lower() == "y":
             thread.start_new_thread(VideoUtils.live_video, ())
         t.interactive()
     else:
