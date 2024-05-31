@@ -189,7 +189,7 @@ class Turret(object):
 
     def calibrate(self):
         """
-        Waits for input to calibrate the turret's axis
+        Waits for input to calibrate the turrets axis
         :return:
         """
         print ("Please calibrate the tilt of the gun so that it is level. Commands: (w) moves up, " \
